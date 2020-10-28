@@ -18,7 +18,6 @@ app.use(shopRoutes);
 
 app.use((err, req, res, next) => {
   if (err) res.send(err);
-  res.send('<h1>Cannot Find Page</h1>')
 })
 
 const server = http.createServer(app);
